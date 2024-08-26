@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root { 
+    --primaryColor: rgb(154, 6, 144);
+} 
+/* start navbar */
+
+#navBar nav{
+    box-shadow: none !important;
+}
+nav{
+    background-image: url(blue_bg.png) !important ;
+}
+#navBar .nav-item {
+    color: rgba(0, 0, 0, 0.753);
+    margin-right: 20px;
+    font-size: 15px;
+}
+#navBar .nav-item .active {
+position:relative ;
+}
+
+#navBar b::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primaryColor);
+    height: 2px;
+    width: 50%;
+    left: 8px;
+    bottom: 8px;
+    border-radius: 10px;
+}
+@media (max-width:992px) {
+    #navBar b::before{
+        width: 0;
+    }
+}
+
+#navBar span button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 20px;
+    width: 70px;
+}
+#navBar span button:hover{
+    background-color: rgba(255, 255, 255, 0.495);
+} 
+
+/* End navbar */
+
+/* start banner */
+
+#banner{
+    background-image:url(blue_bg.png) ;
+    width: 100%;
+    height: 100vh;
+    background-position-y: 100%;
+    position: relative;
+}
+
+#banner h1{
+    padding-top: 150px;
+    font-family: math;
+    font-weight: 900;
+    font-size: 44px;
+}
+#banner h1 span {
+    color: var(--primaryColor);
+}
+#banner p{
+    color: rgba(0, 0, 0, 0.473);
+}
+
+#banner .img-big {
+    position: relative;
+}
+
+#banner .img1{
+    width: 100%;
+
+}
+#banner .img2{
+    width: 45%;
+    position: absolute;
+    top: -37rem;
+    position: relative;
+    right: -100px;
+}
+#banner .img3{
+    position: absolute;
+    left: -22px;
+    top: 24rem;
+}
+#banner .wave{
+    width: 90%;
+    position: absolute;
+    bottom: -1px;
+    left: -100px;
+}
+
+@media (min-width:350px) and (max-width:550px) {
+    #banner .img3 {    position: absolute;
+        left: 0px;
+        top: 14rem;
+        width: 87%;
+    }
+    #banner .img2 {
+        width: 51%;
+        top: -23rem;
+        position: relative;
+        right: -60px;
+    }
+    #banner h1 {
+        padding-top: 50px;
+    }
+    #banner .wave {
+        bottom: 73px;
+        left: -45px;
+    }
+}
+
+@media (min-width:768px) and (max-width:820px){
+    #banner h1 {
+        padding-top: 40px;
+    }
+    #banner .img1 {
+        width: 75%;
+    }
+    
+#banner .img2 {
+    width: 34%;
+    top: -32rem;
+}
+#banner .img3 {
+    left: 30px;
+    top: 18rem;
+    width: 50%;
+}
+#banner .wave {
+    width: 81%;
+    bottom: 5px;
+    left: 10px;
+}
+}
+
+
+@media (min-width:819px) and (max-width:920px){
+    #banner{
+        height: 66vh;
+    }
+    #banner .img3 {
+        top: 20rem;
+        width: 50%;
+        left: 6rem;
+    }
+    #banner .img2 {
+        top: -32rem;
+        right: -152px;
+        width: 35%;
+    }
+    #banner .img1 {
+        width: 76%;
+        margin-left: 65px;
+    }
+
+}
+@media (min-width:992px) and (max-width:1200px){
+    #banner .img3 {
+        top: 16rem;
+        width: 100%;
+    }
+    #banner .img2 {
+    top: -27rem;
+    }
+}
+/* End banner */
+
+/* start Services */
+#Services{
+    width: 100%;
+    position: relative;
+}
+#Services .card{
+    width: 50%;
+    box-shadow: none;
+    border: none;
+    padding: 100px 0;
+}
+#Services h5{
+    width: 105%;
+}
+#Services p{
+    width: 120%;
+
+}
+#Services  .faster{
+    position: absolute;
+    width: 88%;
+    left: 12%;
+    top: 10%;
+    z-index: -1;
+}
+
+#Services .card{
+    position: relative;
+}
+#Services .card img{
+    width: 100%;
+}
+#Services .move{
+    margin-top: 240px;
+    position: relative;
+}
+
+
+#Services .miny .big {
+    position: relative;
+    width: 50%;
+} 
+#Services .miny .card-body {
+    position: absolute;
+    top: 11rem;
+    left: 37px;
+}
+
+
+#Services .miny .card-body p{
+    color: white;
+    font-size: 46px;
+}
+
+
+#Services .miny .card-body h5{
+    color: white;
+    font-size: 12px;
+    display: contents;
+}
+
+
+#Services .poto-2{
+    position: absolute;
+    top: 43rem;
+    right: 3rem;
+} 
+
+#Services .poto-2 img{
+    width: 190%;
+} 
+#Services .poto-2 p{
+    width:231% ;
+}
+#Services .poto-2 h5{
+    width:200% ;
+}
+
+/* Services End   */
+
+/* Start About  */
+#About .col-lg-3 img {
+    width: 80%;
+    margin-top: 200px;
+}
+#About p{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.522);
+}
+#About h5{
+    color: rgba(0, 0, 0, 0.695);
+}
+
+/* End About  */
+
+/* start footer */
+#sec{
+    background-image: url(Group\ 1131.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: -8rem;
+}
+#footer{
+    position: relative;  
+    padding-top: 200px;
+}
+#footer .icon{
+    display: flex;
+}
+
+#footer .icon .small-icon{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 150px;
+}
+#footer .icon .small-icon img{
+    height: 25px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+#footer .icon .small-icon .text{
+    margin-left: 10px;
+}
+#footer .icon .small-icon h6{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.321);
+}
+#footer .icon .small-icon h4{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+#footer .icon  .anther{
+    margin-right: 10px;
+}
+
+#footer .big-icon img{
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#footer .fas{
+    width: 15px !important ;
+}
+.nav a{
+    color: white;
+    margin-top: 10px;
+}
+#footer .img img{
+    width: 31rem;
+    position: absolute;
+    bottom: 0rem;
+    right: 240px;
+}
+/* End footer */
+
+
+
+
+
+
+
+
